@@ -1,0 +1,18 @@
+    <!--Popular Movies Tab-->
+  
+  <div class="container" id="home">
+    <section>
+      <header class="moviesHome-header">
+        <div class="moviesHome-title">Most Popular movies</div>
+      </header>
+         <!-- <div class="swiper-container">-->
+            <div class="swiper-wrapper">
+              <div *ngFor="let movie of movies" class="swiper-slide">
+                <app-poster-card [model]="movie"></app-poster-card>
+              </div>
+          <!--  </div>-->
+          <div class="swiper-pagination"></div>
+          </div>
+      
+    </section>
+  </div>
